@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ToDoList</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="myDiv" class="header">
+		<h2>To Do</h2>
+		<input type="text" id="inputList" placeholder="New note...">
+		<span onclick="newElement()" class="addButton">Add</span>
+	</div>
+
+	<ul class="todoUL" id="todoUL">
+		<li class="checked">Checked</li>
+		<li>First</li>
+		<li>Second</li>
+		<li>Third</li>
+	</ul>
+
+	<div class="options">
+		<a onclick="showAll()">Show all</a>
+		<a onclick="checked()">Checked</a>
+		<a onclick="active()">Active</a>
+		<a id="allCheck">Check All</a>
+		<a onclick="deleteCheck()" id="delete">Delete Check</a>
+	</div>
+<script src="script.js"></script>
+</body>
+</html>
+
